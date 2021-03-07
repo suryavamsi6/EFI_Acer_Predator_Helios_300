@@ -38,6 +38,14 @@
 				<key>Enabled</key>
 				<true/>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-PNLF.aml</string>
+				<key>Path</key>
+				<string>SSDT-PNLF.aml</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -96,7 +104,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>AAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -122,7 +130,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>AAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -148,7 +156,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>AAAAAA==</data>
+				<data>AAA=</data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -261,16 +269,21 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>AAAbWQ==</data>
+				<key>framebuffer-con1-alldata</key>
+				<data>AQUKAAAIAACHAQAAAgQKAAAIAACHAQAA/wAAAAEAAAAgAAAA</data>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-stolenmem</key>
 				<data>AAAwAQ==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>framebuffer-con1-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-alldata</key>
-				<data>AQUKAAAIAACHAQAAAgQKAAAIAACHAQAA/wAAAAEAAAAgAAAA</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
+			<dict>
+				<key>layout-id</key>
+				<data>AwAAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -328,6 +341,24 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
+				<string>Contents/MacOS/ACPIBacklight</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>ACPIBacklight.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AirportItlwm</string>
 				<key>Arch</key>
 				<string>Any</string>
@@ -351,6 +382,24 @@
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AppleBacklightFixup</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>AppleBacklightFixup.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -787,6 +836,10 @@
 		<key>Patch</key>
 		<array>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>Base</key>
+				<string></string>
 				<key>Comment</key>
 				<string>HPET _CRS to XCRS Rename</string>
 				<key>Count</key>
@@ -795,24 +848,28 @@
 				<true/>
 				<key>Find</key>
 				<data>JV9DUlM=</data>
+				<key>Identifier</key>
+				<string></string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
 				<data></data>
-				<key>OemTableId</key>
-				<data>AAAAAA==</data>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
 				<key>Replace</key>
 				<data>JVhDUlM=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>AAAAAA==</data>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>Base</key>
+				<string></string>
 				<key>Comment</key>
 				<string>RTC IRQ 8 Patch</string>
 				<key>Count</key>
@@ -821,24 +878,28 @@
 				<true/>
 				<key>Find</key>
 				<data>IgABeQA=</data>
+				<key>Identifier</key>
+				<string></string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
 				<data></data>
-				<key>OemTableId</key>
-				<data>AAAAAA==</data>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
 				<key>Replace</key>
 				<data>IgAAeQA=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>AAAAAA==</data>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>Base</key>
+				<string></string>
 				<key>Comment</key>
 				<string>TIMR IRQ 0 Patch</string>
 				<key>Count</key>
@@ -847,22 +908,22 @@
 				<true/>
 				<key>Find</key>
 				<data>IgEAeQA=</data>
+				<key>Identifier</key>
+				<string></string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
 				<data></data>
-				<key>OemTableId</key>
-				<data>AAAAAA==</data>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
 				<key>Replace</key>
 				<data>IgAAeQA=</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>AAAAAA==</data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -937,9 +998,9 @@
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
-			<string>Builtin</string>
+			<string>External</string>
 			<key>PickerVariant</key>
-			<string>Auto</string>
+			<string>Modern</string>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
@@ -952,7 +1013,7 @@
 		<key>Debug</key>
 		<dict>
 			<key>AppleDebug</key>
-			<true/>
+			<false/>
 			<key>ApplePanic</key>
 			<true/>
 			<key>DisableWatchDog</key>
@@ -966,7 +1027,7 @@
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
-			<integer>67</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Entries</key>
 		<array>
@@ -1061,7 +1122,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100 alcid=3</string>
+				<string>keepsyms=1 debug=0x100 alcid=3</string>
 				<key>csr-active-config</key>
 				<data>AwAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1187,23 +1248,25 @@
 			<key>AudioOut</key>
 			<integer>0</integer>
 			<key>AudioSupport</key>
-			<false/>
+			<true/>
 			<key>MinimumVolume</key>
-			<integer>20</integer>
+			<integer>50</integer>
 			<key>PlayChime</key>
-			<string>Auto</string>
+			<string>Enabled</string>
 			<key>ResetTrafficClass</key>
 			<false/>
 			<key>SetupDelay</key>
 			<integer>0</integer>
 			<key>VolumeAmplifier</key>
-			<integer>0</integer>
+			<integer>143</integer>
 		</dict>
 		<key>ConnectDrivers</key>
 		<true/>
 		<key>Drivers</key>
 		<array>
+			<string>AudioDxe.efi</string>
 			<string>HfsPlus.efi</string>
+			<string>OpenCanopy.efi</string>
 			<string>OpenRuntime.efi</string>
 		</array>
 		<key>Input</key>
@@ -1224,8 +1287,6 @@
 			<string>ASUS</string>
 			<key>TimerResolution</key>
 			<integer>50000</integer>
-			<key>KeyMergeThreshold</key>
-			<integer>2</integer>
 		</dict>
 		<key>Output</key>
 		<dict>
